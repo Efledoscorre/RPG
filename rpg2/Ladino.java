@@ -10,7 +10,6 @@ class Ladino extends Personagem {
         this.invisivel = false;
     }
 
-    @Override
     public void realizarTeste(String atributo) {
         if (atributo.equalsIgnoreCase("destreza")) {
             System.out.println("Rolagem com vantagem para Destreza: " + rolagemDados.rolarComVantagem());
@@ -51,7 +50,7 @@ class Ladino extends Personagem {
 
     public void ficarInvisivel() {
         this.invisivel = true;
-        this.ataque += 20;
+        this.forca += 20;
         System.out.println(getNome() + " ficou invisível, ganhando um buff de ataque e pulando o turno do adversário.");
     }
 
@@ -62,7 +61,7 @@ class Ladino extends Personagem {
     public void InvisibilidadeAcabar() {
         if (invisivel) {
             this.invisivel = false;
-            this.ataque -= 20;
+            this.forca -= 20;
             System.out.println(getNome() + " não está mais invisível.");
         }
     }

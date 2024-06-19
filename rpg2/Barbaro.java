@@ -10,7 +10,6 @@ public class Barbaro extends Personagem {
         this.stun = false;
     }
 
-    @Override
     public void realizarTeste(String atributo) {
         if (atributo.equalsIgnoreCase("inteligencia")) {
             System.out.println("Rolagem com desvantagem para Inteligência: " + rolagemDados.rolarComDesvantagem());

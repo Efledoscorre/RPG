@@ -101,11 +101,6 @@ public class Main {
             System.out.println("Infelizmente, Gðwnthër foi forte demais");
         }
 
-        scanner.close();
+        scanner.close();*/
     }
-}*/
-
-
-
-        
-        
+}
